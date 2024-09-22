@@ -1,0 +1,86 @@
+.best-dating {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.best-dating h2 {
+    text-align: center;
+}
+
+.dating-card {
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    margin: 10px 0;
+}
+
+.info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info ul li {
+    margin: 5px 0;
+}
+
+.pros-cons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.pros, .cons {
+    width: 45%;
+}
+
+.pros h4, .cons h4 {
+    margin: 10px 0;
+}
+
+.pros ul, .cons ul {
+    list-style: none;
+    padding: 0;
+}
+
+.visit-app {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f60;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .card-content {
+        flex-direction: row;
+    }
+
+    .info {
+        text-align: left;
+        margin-left: 20px;
+    }
+}
