@@ -11,6 +11,7 @@ module.exports = {
   },
   module: {
     rules: [
+      // JavaScript and JSX handling
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
@@ -18,14 +19,16 @@ module.exports = {
           loader: "babel-loader",
           options: {
             presets: ["@babel/preset-env", "@babel/preset-react"],
-            "sourceMaps": false
+            sourceMaps: false,
           },
         },
       },
+      // CSS handling
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"],
       },
+      // Image handling (PNG, JPEG, GIF, SVG)
       {
         test: /\.(png|jpe?g|gif|svg)$/i,
         use: [
@@ -40,6 +43,9 @@ module.exports = {
         ],
       },
     ],
+  },
+  resolve: {
+    extensions: [".js", ".jsx"], // Resolve .jsx and .js extensions automatically
   },
   plugins: [
     new HtmlWebpackPlugin({
